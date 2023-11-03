@@ -1,0 +1,24 @@
+<mvc:View
+	controllerName="com.countdowntimer.app.controller.Main"
+	displayBlock="true"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+	core:require="{
+		formatter: 'com/countdowntimer/app/model/formatter'
+	}">
+	<Page
+		title="Main Page"
+	>
+		<content>
+			
+		</content>
+		<customHeader>
+		</customHeader>
+		<footer>
+		</footer>
+		<headerContent>
+		</headerContent>
+	</Page>
+
+</mvc:View>

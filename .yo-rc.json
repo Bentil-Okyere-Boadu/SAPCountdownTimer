@@ -1,0 +1,14 @@
+{
+  "generator-ui5-app": {
+    "namespace": "com.countdowntimer.app",
+    "framework": "SAPUI5",
+    "frameworkVersion": "1.120.0",
+    "author": "Bentil Okyere Boadu",
+    "initrepo": true,
+    "appId": "com.countdowntimer.app",
+    "appURI": "com/countdowntimer/app",
+    "cdnDomain": "ui5.sap.com",
+    "defaultTheme": "sap_horizon",
+    "qunitCoverageFile": "qunit-coverage-istanbul.js"
+  }
+}
