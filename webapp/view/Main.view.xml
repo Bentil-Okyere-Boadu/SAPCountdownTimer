@@ -6,19 +6,53 @@
 	xmlns:core="sap.ui.core"
 	core:require="{
 		formatter: 'com/countdowntimer/app/model/formatter'
-	}">
-	<Page
-		title="Main Page"
-	>
+	}"
+>
+	<Page title="{i18n>appDescription}">
 		<content>
-			
+			<VBox
+				justifyContent="Center"
+				alignItems="Center"
+			>
+				<HBox
+					justifyContent="Center"
+					alignItems="Center"
+					class="sapUiSmallMarginTop"
+				>
+					<Label
+						text="{i18n>mainpage.label.selectDate}"
+						class="sapUiSmallMarginEnd"
+					/>
+					<DatePicker id="idDatePicker" minDate="{timer>/today}" />
+				</HBox>
+				<!-- <Button
+					text="{i18n>mainpage.button.text.start}"
+					type="Emphasized"
+					class="sapUiMediumMargin"
+					press=".onStartCountdownButtonPress"
+				/> -->
+				<HBox
+					alignContent="SpaceAround"
+					justifyContent="Center"
+				>
+					<VBox class="sapUiMediumMargin">
+						<Label text="{i18n>mainpage.label.day}" />
+						<Text text="{timer>/day}" />
+					</VBox>
+					<VBox class="sapUiMediumMargin">
+						<Label text="{i18n>mainpage.label.hour}" />
+						<Text text="{timer>/hour}" />
+					</VBox>
+					<VBox class="sapUiMediumMargin">
+						<Label text="{i18n>mainpage.label.minutes}" />
+						<Text text="{timer>/minute}" />
+					</VBox>
+					<VBox class="sapUiMediumMargin">
+						<Label text="{i18n>mainpage.label.seconds}" />
+						<Text text="{timer>/second}" />
+					</VBox>
+				</HBox>
+			</VBox>
 		</content>
-		<customHeader>
-		</customHeader>
-		<footer>
-		</footer>
-		<headerContent>
-		</headerContent>
 	</Page>
-
 </mvc:View>
